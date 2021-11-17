@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/main.js"],"names":["$","on","toggleClass"],"mappings":"AAAAA,CAAC,CAAC,YAAD,CAAD,CAAgBC,EAAhB,CAAmB,OAAnB,EAA4B,YAAM;AAC9BD,EAAAA,CAAC,CAAC,OAAD,CAAD,CAAWE,WAAX,CAAuB,QAAvB;AACH,CAFD","file":"main.fb6bbcaf.js","sourceRoot":"..\\Private","sourcesContent":["$('.show-menu').on('click', () => {\r\n    $('.menu').toggleClass('hidden');\r\n})\r\n  \r\n"]}

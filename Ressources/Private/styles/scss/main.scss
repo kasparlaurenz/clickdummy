@@ -1,8 +1,196 @@
-@use './use/variables' as *;
+@use "./use/variables" as *;
+@use "./use/navigation.scss" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-color: #f0f0f0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+////NAVBAR////
+.nav-container {
+  position: relative;
+  width: 100%;
+  background-color: white;
+
+  .navbar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 1500px;
+    margin: 0 auto;
+
+    .logo {
+        z-index: 15;
+      padding: 15px;
+      position: relative;
+      top: 41px;
+
+      img {
+        background-color: white;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 30px;
+      }
+    }
+
+    .nav-items {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 25px 15px;
+
+        p {
+          display: inline;
+          vertical-align: 10px;
+          margin-right: 10px;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          vertical-align: sub;
+        }
+      }
+    }
+  }
+
+  ////MENU-BUTTON////
+  .menuButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 8;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 8;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 8;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+  }
+}
+
+.menu {
+  background-color: #00a0dd;
+  z-index: 10;
+  position: absolute;
+  width: 1500px;
+  top: 90px;
+  padding-top: 160px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-level-1, .nav-level-2 {
+  list-style: none;
+  font-size: 38px;
+  line-height: 70px;
+  font-weight: bold;
+}
+.nav-level-1 li a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.nav-level-2 li a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: white;
+    }
+}
+
+////WRAPPER////
+.wrapper {
+    position: absolute;
+    border: 1px solid red;
+    width: 1500px;
+    height: 100vh;
+    display: flex;
+    top: 160px;
+
+    .bread-crumb {
+        display: inline;
+        padding-top: 40px;
+        
+        ul {
+            list-style: none;
+
+            li{
+                display: inline-block;
+                padding-right: 30px;
+
+                a {
+                    text-decoration: none;
+                    color: #888888;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #00a0dd;
+                    }
+                }
+            }
+        }
+            
+    }
+  }
+
+
+
+////Click-Classes////
+.hidden {
+    display: none;
+}
+  
