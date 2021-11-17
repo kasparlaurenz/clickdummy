@@ -1,0 +1,30 @@
+{
+  "name": "website_template",
+  "version": "0.0.1",
+  "description": "website template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel Ressources/Private/index.html -d Ressources/Public",
+    "build": "parcel build Ressources/Private/index.html -d Ressources/Public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasparlaurenz/website_template.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "js",
+    "scss"
+  ],
+  "author": "Laurenz Seipel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasparlaurenz/website_template/issues"
+  },
+  "homepage": "https://github.com/kasparlaurenz/website_template#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1"
+  }
+}
