@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/scss/subpage.scss">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/zmg_logo.svg" alt="Logo"></a>
+            </div>
+            <ul class=nav-items>
+                <li>
+                    <p>Anmelden</p><img src="../img/icon_anmelden.svg" alt="">
+                </li>
+                <li><img src="../img/icon_suche.svg" alt=""></li>
+                <li> <button class="menuButton show-menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="40" height="40" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu hidden">
+        <ul class="nav-level-1">
+            <li><a href="index.html">News</a></li>
+            <li><a href="index.html">Studien</a></li>
+            <li>
+                <p class="has-subPage services">Services</p>
+            </li>
+            <li>
+                <p class="has-subPage tools">Tools & Instrumente</p>
+            </li>
+            <li><a href="index.html">Seminare & Workshops</a></li>
+            <li><a href="index.html">ZMG-Archiv</a></li>
+            <li><a href="index.html">Unser Team</a></li>
+        </ul>
+        <ul class="nav-level-2 level-2-services hidden">
+            <li><a href="index.html">Reichweiten der Zeitungen</a></li>
+            <li><a href="index.html">Auflagen der Zeitungen</a></li>
+            <li><a href="index.html">Media- und Planungsdaten</a></li>
+            <li><a href="index.html">Media-Beratung</a></li>
+            <li><a href="index.html">Daten & Services für Verlage</a></li>
+            <li><a href="index.html">Das Engagement der ZMG</a></li>
+        </ul>
+
+        <ul class="nav-level-2 level-2-tools hidden ">
+            <li><a href="index.html">Werbewirkungstools</a></li>
+            <li><a href="index.html">Planungstools</a></li>
+            <li><a href="index.html">Buchungstools</a></li>
+        </ul>
+        <div class="menu-teaser hidden">
+            <div class="menu-teaser-image">
+            </div>
+            <h3>Dies ist ein Teaser</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cum. Nobis dolorem voluptate eaque quod?
+                Obcaecati tenetur ipsam mollitia minus.</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+
+        <div class="bread-crumb">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="sub.html">Sub-Page</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <h1>Sub-Page</h1>
+
+            <div class="content-element-1">
+                <h2 class="image-title">Bildüberschrift</h2>
+                <div class="image-container">
+                    <img src="../img/teaser/6.jpg" alt="cover">
+                </div>
+                <h2>Überschrift</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus iure cupiditate?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium iusto, deleniti velit
+                    veritatis ea beatae inventore ab recusandae ullam ut error repellat officia ad. Ipsum fugiat quasi
+                    in aut? Reprehenderit minima labore ratione hic eos dolorum iste animi saepe sed natus deserunt
+                    dignissimos at accusamus error fugiat, nihil ex. Iste pariatur, dolorum et beatae, facilis numquam
+                    fugit veritatis hic cumque, quisquam quo ullam earum.</p>
+            </div>
+
+            <div class="content-element-2">
+                <div class="teaser">
+                    <a href="index.html">Weiterlesen</a>
+                    <a href="index.html">Anmelden</a>
+                </div>
+                <div class="teaser-content">
+                    <div class="teaser-text">
+                        <h3>Jetzt alle Inhalte lesen</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet nobis cum magnam at quia ut
+                            natus ipsa libero, soluta reiciendis explicabo repudiandae quidem dolore magni culpa nam.
+                            Molestias, tempora. Eius, omnis mollitia voluptatem nesciunt animi facere neque totam quam
+                            ducimus!</p>
+                    </div>
+                    <img src="../img/illu_mitgleidschafft.svg" alt="">
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <!--Wrapper closing-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
