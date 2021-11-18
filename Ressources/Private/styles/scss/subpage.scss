@@ -50,16 +50,26 @@ body {
       li {
         display: inline-block;
         padding: 25px 15px;
+        cursor: pointer;
 
         p {
           display: inline;
           vertical-align: 10px;
           margin-right: 10px;
+          color: black;
         }
 
         &:last-child {
           padding-right: 0;
           vertical-align: sub;
+        }
+
+        svg {
+          fill: black;
+          transition: all 0.2s ease;
+        }
+        svg:hover {
+          fill: #00a0dd;
         }
       }
     }
@@ -304,6 +314,7 @@ p {
       color: black;
       font-size: 18px;
       line-height: 27px;
+      cursor: auto;
     }
   }
 
@@ -323,6 +334,7 @@ p {
         font-weight: bold;
         font-size: 18px;
         text-decoration: none;
+        transition: all 0.2s ease;
 
         &:last-child:before {
           content: "->";
@@ -353,6 +365,7 @@ p {
           color: black;
           font-size: 18px;
           line-height: 27px;
+          cursor: auto;
         }
       }
     }
@@ -360,6 +373,36 @@ p {
 }
 
 ////FOOTER////
+.footer-container {
+  background-color: white;
+  overflow: hidden;
+  margin-top: 200px;
+
+  .footer {
+    height: 90px;
+    width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      line-height: 90px;
+
+      li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:hover {
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+  }
+}
 
 ////Click-Classes////
 .hidden {

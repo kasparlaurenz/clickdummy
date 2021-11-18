@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel Ressources/Private/index.html -d Ressources/Public",
-    "build": "parcel build Ressources/Private/index.html -d Ressources/Public"
+    "build": "parcel build Ressources/Private/index.html -d Ressources/Public --public-url ."
   },
   "repository": {
     "type": "git",
