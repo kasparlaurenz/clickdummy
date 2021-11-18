@@ -8,11 +8,31 @@
 }
 
 body {
+  position: relative;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
+.background-left {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  top: 1000px;
+}
+.background-right {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  top: 90px;
+}
+
+.background-right-bottom {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  bottom: 90px;
+}
 ////NAVBAR////
 .nav-container {
   width: 100%;
