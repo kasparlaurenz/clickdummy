@@ -1,6 +1,5 @@
 ////MAIN////
 
-
 @use "./use/variables" as *;
 
 * {
@@ -22,6 +21,13 @@ body {
   right: 0;
   z-index: -2;
   top: 890px;
+}
+
+.background-left {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  top: 1600px;
 }
 
 .background-left-bottom {
@@ -317,6 +323,72 @@ p {
         font-size: 16px;
       }
     }
+
+    .news-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 240px;
+
+      h1 {
+        padding: 0px 0px 80px 0px;
+      }
+
+      .news-slider {
+        display: flex;
+        margin-bottom: 80px;
+        justify-content: space-between;
+        .news-slide {
+          width: 380px;
+          background-color: white;
+          img {
+            width: 380px;
+          }
+          .news-content {
+            padding: 20px 30px 20px 40px;
+            .news-date {
+              color: #888888;
+              padding-bottom: 40px;
+
+              &:after {
+                content: "";
+                position: relative;
+                top: 20px;
+                display: block;
+                width: 50px;
+                height: 2px;
+                background-color: #00a0dd;
+              }
+            }
+            p {
+              font-size: 16px;
+              line-height: 20px;
+              text-align: justify;
+              padding: 10px 0px;
+              color: black;
+              cursor: auto;
+            }
+            a {
+              font-weight: bold;
+              text-transform: uppercase;
+              color: #00a0dd;
+              text-decoration: none;
+              transition: all 0.2s ease;
+
+              &:before {
+                content: "->";
+                padding-right: 8px;
+                font-weight: bold;
+              }
+
+              &:hover {
+                border-bottom: 2px solid #00a0dd;
+              }
+            }
+          }
+        }
+      }
+    }
     h1 {
       padding: 250px 0 80px 0;
 
@@ -332,11 +404,14 @@ p {
     }
 
     .teaser-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-top: 80px;
       .teaser {
         width: 380px;
+        padding-top: 160px;
         background-color: white;
         margin-bottom: 30px;
         display: flex;
@@ -345,7 +420,9 @@ p {
         align-items: center;
 
         img {
-          width: 100%;
+          width: 400px;
+          position: absolute;
+          top: -70px;
         }
 
         .teaser-content {
@@ -393,44 +470,59 @@ p {
     }
 
     .content-element-1 {
-        background-color: white;
+      background-color: white;
+      color: black;
+      padding: 40px 80px 80px 80px;
+      margin-top: 100px;
+
+      .image-title {
+        padding: 0px 0px 40px 0px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 40px 0px 10px 0px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+        padding: 0px 0px 20px 0px;
+      }
+      p {
         color: black;
-        padding: 40px 80px 80px 80px;
-        margin-top: 100px;
-    
-        .image-title {
-          padding: 0px 0px 40px 0px;
-        }
-    
-        .image-container {
-          width: 100%;
-          height: 700px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-    
-        h2 {
+        font-size: 18px;
+        line-height: 27px;
+        cursor: auto;
+        margin-bottom: 20px;
+      }
+      a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #00a0dd;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:before {
+          content: "->";
+          padding-right: 8px;
           font-weight: bold;
-          font-size: 24px;
-          line-height: 32px;
-          padding: 40px 0px 10px 0px;
         }
-        h3 {
-          font-size: 20px;
-          font-weight: normal;
-          font-style: italic;
-          padding: 0px 0px 20px 0px;
-        }
-        p {
-          color: black;
-          font-size: 18px;
-          line-height: 27px;
-          cursor: auto;
+
+        &:hover {
+          border-bottom: 2px solid #00a0dd;
         }
       }
+    }
   }
 }
 

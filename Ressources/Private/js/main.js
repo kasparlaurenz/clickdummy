@@ -1,5 +1,13 @@
+
+
 $(".show-menu").on("click", () => {
-  $(".menu").toggleClass("hidden");
+  $(".menu").slideToggle({
+    start: function () {
+      $(this).css({
+        display: "flex"
+      })
+  }
+})
 });
 
 //show menu-teaser on mouseover
