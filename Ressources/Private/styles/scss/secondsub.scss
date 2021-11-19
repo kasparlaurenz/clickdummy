@@ -34,7 +34,7 @@ body {
   position: absolute;
   right: 0;
   z-index: -2;
-  bottom: 90px;
+  bottom: 0px;
 }
 ////NAVBAR////
 .nav-container {
@@ -317,6 +317,11 @@ p {
 
     img {
       width: 40%;
+      transition: 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
     }
 
     .teaser-content {
@@ -431,6 +436,14 @@ p {
       background-color: white;
       padding: 80px;
 
+      img {
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
       .teaser-text {
         width: 600px;
 
@@ -454,32 +467,9 @@ p {
 .footer-container {
   background-color: white;
   overflow: hidden;
-  margin-top: 200px;
-
-  .footer {
-    height: 90px;
-    width: 1200px;
-    margin: 0 auto;
-
-    ul {
-      display: flex;
-      list-style: none;
-      justify-content: space-around;
-      line-height: 90px;
-
-      li a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-
-        &:hover {
-          border-bottom: 2px solid black;
-        }
-      }
-    }
-  }
+  margin-top: 400px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 ////Click-Classes////

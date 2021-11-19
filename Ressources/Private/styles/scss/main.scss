@@ -16,25 +16,32 @@ body {
   padding: 0;
 }
 
-.background-right {
+.background-right-top {
   position: absolute;
   right: 0;
   z-index: -2;
-  top: 890px;
+  top: 90px;
 }
 
 .background-left {
   position: absolute;
   left: 0;
   z-index: -2;
-  top: 1600px;
+  top: 1200px;
+}
+
+.background-right {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  top: 3000px;
 }
 
 .background-left-bottom {
   position: absolute;
   left: 0;
   z-index: -2;
-  bottom: 90px;
+  bottom: 0px;
 }
 ////NAVBAR////
 .nav-container {
@@ -290,63 +297,47 @@ p {
   margin: 0 auto;
   width: 1200px;
 
-  .header-image-container {
-    width: 100%;
-    height: 500px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
   main {
     padding-bottom: 400px;
 
-    .header-text {
-      background-color: white;
-      position: absolute;
-      top: 700px;
-      margin-left: 360px;
-      width: 840px;
-      padding: 40px;
-      h2 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
-        padding: 0px 0px 20px 0px;
-      }
-      p {
-        color: black;
-        line-height: 22px;
-        font-size: 16px;
+    h1 {
+      padding: 0px 0 40px 0;
+
+      &:after {
+        content: "";
+        background-color: #00a0dd;
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 5px;
+        bottom: -15px;
       }
     }
-
-    .news-container {
+    ////ARTICLE////
+    .article-container {
       display: flex;
       flex-direction: column;
       position: relative;
       top: 240px;
+      margin-bottom: 150px;
 
-      h1 {
-        padding: 0px 0px 80px 0px;
-      }
-
-      .news-slider {
+      .article-slider {
         display: flex;
-        margin-bottom: 80px;
         justify-content: space-between;
-        .news-slide {
+        margin-bottom: 30px;
+        .article-slide {
           width: 380px;
           background-color: white;
           img {
             width: 380px;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(1.02);
+            }
           }
-          .news-content {
+          .article-content {
             padding: 20px 30px 20px 40px;
-            .news-date {
+            .article-date {
               color: #888888;
               padding-bottom: 40px;
 
@@ -388,138 +379,145 @@ p {
           }
         }
       }
-    }
-    h1 {
-      padding: 250px 0 80px 0;
-
-      &:after {
-        content: "";
+      .article-button {
         background-color: #00a0dd;
-        position: relative;
-        display: block;
-        width: 60px;
-        height: 6px;
-        bottom: -34px;
+        width: fit-content;
+        padding: 20px 40px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: #3ac1f7;
+        }
       }
     }
-
-    .teaser-container {
+    ////SERVICES////
+    .services-container {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
       position: relative;
-      margin-top: 80px;
-      .teaser {
-        width: 380px;
-        padding-top: 160px;
-        background-color: white;
-        margin-bottom: 30px;
+      top: 240px;
+      margin-bottom: 150px;
+
+      .services-slider {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 80px;
+        .services-slide {
+          width: 380px;
+          background-color: white;
+          position: relative;
 
-        img {
-          width: 400px;
-          position: absolute;
-          top: -70px;
-        }
-
-        .teaser-content {
-          width: 100%;
-          padding: 20px 30px 20px 40px;
-          .teaser-category {
-            color: #888888;
-            padding-bottom: 40px;
-            font-size: 15px;
+          img {
+            position: absolute;
+            width: 380px;
+            top: -60px;
           }
-
-          h2 {
-            font-weight: bold;
-            font-size: 18px;
-          }
-
-          p {
-            font-size: 16px;
-            line-height: 20px;
-            text-align: justify;
-            padding: 20px 0px;
-            color: black;
-            cursor: auto;
-          }
-
-          a {
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #00a0dd;
-            text-decoration: none;
-            transition: all 0.2s ease;
-
-            &:before {
-              content: "->";
-              padding-right: 8px;
-              font-weight: bold;
-            }
-
+          .active-gif {
+            opacity: 0;
             &:hover {
-              border-bottom: 2px solid #00a0dd;
+              opacity: 1;
             }
           }
+          .services-content {
+            padding: 20px 30px 20px 40px;
+            h2 {
+              padding-top: 150px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 20px;
+              text-align: justify;
+              padding: 10px 0px;
+              color: black;
+              cursor: auto;
+            }
+            a {
+              font-weight: bold;
+              text-transform: uppercase;
+              color: #00a0dd;
+              text-decoration: none;
+              transition: all 0.2s ease;
+
+              &:before {
+                content: "->";
+                padding-right: 8px;
+                font-weight: bold;
+              }
+
+              &:hover {
+                border-bottom: 2px solid #00a0dd;
+              }
+            }
+          }
+        }
+      }
+      .services-button {
+        background-color: #00a0dd;
+        width: fit-content;
+        padding: 20px 40px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: #3ac1f7;
         }
       }
     }
 
     .content-element-1 {
-      background-color: white;
       color: black;
-      padding: 40px 80px 80px 80px;
       margin-top: 100px;
-
-      .image-title {
-        padding: 0px 0px 40px 0px;
-      }
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
       }
 
-      h2 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
-        padding: 40px 0px 10px 0px;
-      }
-      h3 {
-        font-size: 20px;
-        font-weight: normal;
-        font-style: italic;
-        padding: 0px 0px 20px 0px;
-      }
-      p {
-        color: black;
-        font-size: 18px;
-        line-height: 27px;
-        cursor: auto;
-        margin-bottom: 20px;
-      }
-      a {
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #00a0dd;
-        text-decoration: none;
-        transition: all 0.2s ease;
-
-        &:before {
-          content: "->";
-          padding-right: 8px;
+      .content-text {
+        background-color: white;
+        padding: 0px 40px 40px 40px;
+        h2 {
           font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          padding: 40px 0px 10px 0px;
         }
+        h3 {
+          font-size: 20px;
+          font-weight: normal;
+          font-style: italic;
+          padding: 0px 0px 20px 0px;
+        }
+        p {
+          color: black;
+          font-size: 18px;
+          line-height: 27px;
+          cursor: auto;
+          margin-bottom: 20px;
+        }
+        a {
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #00a0dd;
+          text-decoration: none;
+          transition: all 0.2s ease;
 
-        &:hover {
-          border-bottom: 2px solid #00a0dd;
+          &:before {
+            content: "->";
+            padding-right: 8px;
+            font-weight: bold;
+          }
+
+          &:hover {
+            border-bottom: 2px solid #00a0dd;
+          }
         }
       }
     }
@@ -530,32 +528,9 @@ p {
 .footer-container {
   background-color: white;
   overflow: hidden;
-  margin-top: 200px;
-
-  .footer {
-    height: 90px;
-    width: 1200px;
-    margin: 0 auto;
-
-    ul {
-      display: flex;
-      list-style: none;
-      justify-content: space-around;
-      line-height: 90px;
-
-      li a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-
-        &:hover {
-          border-bottom: 2px solid black;
-        }
-      }
-    }
-  }
+  margin-top: 400px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 ////Click-Classes////

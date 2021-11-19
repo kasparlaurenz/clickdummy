@@ -346,6 +346,12 @@ p:hover {
   background-color: white;
   padding: 80px;
 }
+.content-wrapper .content-element-2 .teaser-content img {
+  transition: all 0.3s ease;
+}
+.content-wrapper .content-element-2 .teaser-content img:hover {
+  transform: scale(1.02);
+}
 .content-wrapper .content-element-2 .teaser-content .teaser-text {
   width: 600px;
 }
@@ -363,28 +369,9 @@ p:hover {
 .footer-container {
   background-color: white;
   overflow: hidden;
-  margin-top: 200px;
-}
-.footer-container .footer {
-  height: 90px;
+  margin-top: 400px;
   width: 1200px;
   margin: 0 auto;
-}
-.footer-container .footer ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  line-height: 90px;
-}
-.footer-container .footer ul li a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.footer-container .footer ul li a:hover {
-  border-bottom: 2px solid black;
 }
 
 .hidden {

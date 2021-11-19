@@ -12,25 +12,32 @@ body {
   padding: 0;
 }
 
-.background-right {
+.background-right-top {
   position: absolute;
   right: 0;
   z-index: -2;
-  top: 890px;
+  top: 90px;
 }
 
 .background-left {
   position: absolute;
   left: 0;
   z-index: -2;
-  top: 1600px;
+  top: 1200px;
+}
+
+.background-right {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  top: 3000px;
 }
 
 .background-left-bottom {
   position: absolute;
   left: 0;
   z-index: -2;
-  bottom: 90px;
+  bottom: 0px;
 }
 
 .nav-container {
@@ -268,66 +275,52 @@ p:hover {
   margin: 0 auto;
   width: 1200px;
 }
-.content-wrapper .header-image-container {
-  width: 100%;
-  height: 500px;
-}
-.content-wrapper .header-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .content-wrapper main {
   padding-bottom: 400px;
 }
-.content-wrapper main .header-text {
-  background-color: white;
-  position: absolute;
-  top: 700px;
-  margin-left: 360px;
-  width: 840px;
-  padding: 40px;
+.content-wrapper main h1 {
+  padding: 0px 0 40px 0;
 }
-.content-wrapper main .header-text h2 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  padding: 0px 0px 20px 0px;
+.content-wrapper main h1:after {
+  content: "";
+  background-color: #00a0dd;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 5px;
+  bottom: -15px;
 }
-.content-wrapper main .header-text p {
-  color: black;
-  line-height: 22px;
-  font-size: 16px;
-}
-.content-wrapper main .news-container {
+.content-wrapper main .article-container {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 240px;
+  margin-bottom: 150px;
 }
-.content-wrapper main .news-container h1 {
-  padding: 0px 0px 80px 0px;
-}
-.content-wrapper main .news-container .news-slider {
+.content-wrapper main .article-container .article-slider {
   display: flex;
-  margin-bottom: 80px;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
-.content-wrapper main .news-container .news-slider .news-slide {
+.content-wrapper main .article-container .article-slider .article-slide {
   width: 380px;
   background-color: white;
 }
-.content-wrapper main .news-container .news-slider .news-slide img {
+.content-wrapper main .article-container .article-slider .article-slide img {
   width: 380px;
+  transition: all 0.3s ease;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content {
+.content-wrapper main .article-container .article-slider .article-slide img:hover {
+  transform: scale(1.02);
+}
+.content-wrapper main .article-container .article-slider .article-slide .article-content {
   padding: 20px 30px 20px 40px;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content .news-date {
+.content-wrapper main .article-container .article-slider .article-slide .article-content .article-date {
   color: #888888;
   padding-bottom: 40px;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content .news-date:after {
+.content-wrapper main .article-container .article-slider .article-slide .article-content .article-date:after {
   content: "";
   position: relative;
   top: 20px;
@@ -336,7 +329,7 @@ p:hover {
   height: 2px;
   background-color: #00a0dd;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content p {
+.content-wrapper main .article-container .article-slider .article-slide .article-content p {
   font-size: 16px;
   line-height: 20px;
   text-align: justify;
@@ -344,165 +337,157 @@ p:hover {
   color: black;
   cursor: auto;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content a {
+.content-wrapper main .article-container .article-slider .article-slide .article-content a {
   font-weight: bold;
   text-transform: uppercase;
   color: #00a0dd;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content a:before {
+.content-wrapper main .article-container .article-slider .article-slide .article-content a:before {
   content: "->";
   padding-right: 8px;
   font-weight: bold;
 }
-.content-wrapper main .news-container .news-slider .news-slide .news-content a:hover {
+.content-wrapper main .article-container .article-slider .article-slide .article-content a:hover {
   border-bottom: 2px solid #00a0dd;
 }
-.content-wrapper main h1 {
-  padding: 250px 0 80px 0;
-}
-.content-wrapper main h1:after {
-  content: "";
+.content-wrapper main .article-container .article-button {
   background-color: #00a0dd;
-  position: relative;
-  display: block;
-  width: 60px;
-  height: 6px;
-  bottom: -34px;
+  width: fit-content;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.content-wrapper main .teaser-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  margin-top: 80px;
+.content-wrapper main .article-container .article-button:hover {
+  transform: scale(1.05);
+  background-color: #3ac1f7;
 }
-.content-wrapper main .teaser-container .teaser {
-  width: 380px;
-  padding-top: 160px;
-  background-color: white;
-  margin-bottom: 30px;
+.content-wrapper main .services-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 240px;
+  margin-bottom: 150px;
 }
-.content-wrapper main .teaser-container .teaser img {
-  width: 400px;
+.content-wrapper main .services-container .services-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+.content-wrapper main .services-container .services-slider .services-slide {
+  width: 380px;
+  background-color: white;
+  position: relative;
+}
+.content-wrapper main .services-container .services-slider .services-slide img {
   position: absolute;
-  top: -70px;
+  width: 380px;
+  top: -60px;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content {
-  width: 100%;
+.content-wrapper main .services-container .services-slider .services-slide .active-gif {
+  opacity: 0;
+}
+.content-wrapper main .services-container .services-slider .services-slide .active-gif:hover {
+  opacity: 1;
+}
+.content-wrapper main .services-container .services-slider .services-slide .services-content {
   padding: 20px 30px 20px 40px;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content .teaser-category {
-  color: #888888;
-  padding-bottom: 40px;
-  font-size: 15px;
+.content-wrapper main .services-container .services-slider .services-slide .services-content h2 {
+  padding-top: 150px;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content h2 {
-  font-weight: bold;
-  font-size: 18px;
-}
-.content-wrapper main .teaser-container .teaser .teaser-content p {
+.content-wrapper main .services-container .services-slider .services-slide .services-content p {
   font-size: 16px;
   line-height: 20px;
   text-align: justify;
-  padding: 20px 0px;
+  padding: 10px 0px;
   color: black;
   cursor: auto;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content a {
+.content-wrapper main .services-container .services-slider .services-slide .services-content a {
   font-weight: bold;
   text-transform: uppercase;
   color: #00a0dd;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content a:before {
+.content-wrapper main .services-container .services-slider .services-slide .services-content a:before {
   content: "->";
   padding-right: 8px;
   font-weight: bold;
 }
-.content-wrapper main .teaser-container .teaser .teaser-content a:hover {
+.content-wrapper main .services-container .services-slider .services-slide .services-content a:hover {
   border-bottom: 2px solid #00a0dd;
 }
-.content-wrapper main .content-element-1 {
-  background-color: white;
-  color: black;
-  padding: 40px 80px 80px 80px;
-  margin-top: 100px;
+.content-wrapper main .services-container .services-button {
+  background-color: #00a0dd;
+  width: fit-content;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.content-wrapper main .content-element-1 .image-title {
-  padding: 0px 0px 40px 0px;
+.content-wrapper main .services-container .services-button:hover {
+  transform: scale(1.05);
+  background-color: #3ac1f7;
+}
+.content-wrapper main .content-element-1 {
+  color: black;
+  margin-top: 100px;
 }
 .content-wrapper main .content-element-1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.content-wrapper main .content-element-1 h2 {
+.content-wrapper main .content-element-1 .content-text {
+  background-color: white;
+  padding: 0px 40px 40px 40px;
+}
+.content-wrapper main .content-element-1 .content-text h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   padding: 40px 0px 10px 0px;
 }
-.content-wrapper main .content-element-1 h3 {
+.content-wrapper main .content-element-1 .content-text h3 {
   font-size: 20px;
   font-weight: normal;
   font-style: italic;
   padding: 0px 0px 20px 0px;
 }
-.content-wrapper main .content-element-1 p {
+.content-wrapper main .content-element-1 .content-text p {
   color: black;
   font-size: 18px;
   line-height: 27px;
   cursor: auto;
   margin-bottom: 20px;
 }
-.content-wrapper main .content-element-1 a {
+.content-wrapper main .content-element-1 .content-text a {
   font-weight: bold;
   text-transform: uppercase;
   color: #00a0dd;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.content-wrapper main .content-element-1 a:before {
+.content-wrapper main .content-element-1 .content-text a:before {
   content: "->";
   padding-right: 8px;
   font-weight: bold;
 }
-.content-wrapper main .content-element-1 a:hover {
+.content-wrapper main .content-element-1 .content-text a:hover {
   border-bottom: 2px solid #00a0dd;
 }
 
 .footer-container {
   background-color: white;
   overflow: hidden;
-  margin-top: 200px;
-}
-.footer-container .footer {
-  height: 90px;
+  margin-top: 400px;
   width: 1200px;
   margin: 0 auto;
-}
-.footer-container .footer ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  line-height: 90px;
-}
-.footer-container .footer ul li a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.footer-container .footer ul li a:hover {
-  border-bottom: 2px solid black;
 }
 
 .hidden {
