@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309.363" height="1200.3" viewBox="0 0 309.363 1200.3">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_15" data-name="Rechteck 15" width="308.333" height="846.945" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rechteck_16" data-name="Rechteck 16" width="309.333" height="1150.434" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_237" data-name="Gruppe 237" transform="translate(368.686 1364.71) rotate(180)">
+    <path id="Pfad_28" data-name="Pfad 28" d="M59.475,537.708l97.332,219.186L361.648,531.862,155.173,313.515Z" transform="translate(0.186 255.234)" fill="#fff"/>
+    <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(59.353 164.41)">
+      <g id="Gruppe_1" data-name="Gruppe 1" clip-path="url(#clip-path)">
+        <path id="Pfad_29" data-name="Pfad 29" d="M65.657,568.62l226.2-90.858-8.393,300.392L-21.065,790.682Z" transform="translate(-197.033 371.978)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Pfad_30" data-name="Pfad 30" d="M59.361,469.333l94.823,37.032L141.653,201.838l-82.292-2.655Z" transform="translate(-0.008 59.524)"/>
+    <g id="Gruppe_4" data-name="Gruppe 4" transform="translate(59.353 164.41)">
+      <g id="Gruppe_3" data-name="Gruppe 3" clip-path="url(#clip-path-2)">
+        <path id="Pfad_33" data-name="Pfad 33" d="M240.8,617.85c-2.888,0-230.288,92.529-230.288,92.529L142.944,395.154Z" transform="translate(-142.98 230.572)" fill="#00a0dd"/>
+        <path id="Pfad_34" data-name="Pfad 34" d="M235.682,367.538c-2.888,0-223.353-87.024-223.353-87.024l127.5,310.634Z" transform="translate(-139.869 34.334)" fill="#ee8018"/>
+      </g>
+    </g>
+    <path id="Pfad_35" data-name="Pfad 35" d="M59.361,230.408l81.928,2.609L59.361,181Z" transform="translate(-0.008 28.406)" fill="#e3e4e4"/>
+    <path id="Pfad_36" data-name="Pfad 36" d="M309.379,726.931,102.834,505.875,89.573,200.184,250,442.623Z" transform="translate(51.709 61.237)" fill="#00a0dd"/>
+    <path id="Pfad_37" data-name="Pfad 37" d="M95.305,617.614l19.053,251.977L299.567,394.429Z" transform="translate(61.52 393.741)"/>
+    <path id="Pfad_1056" data-name="Pfad 1056" d="M295.9,240.378V561.09L413.5,458.844,393.24,208.508Z" transform="translate(-236.581 803.62)" fill="#ee8018"/>
+  </g>
+</svg>

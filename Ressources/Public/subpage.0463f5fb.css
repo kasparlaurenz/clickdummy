@@ -245,6 +245,11 @@ p:hover {
   position: relative;
   padding-left: 15px;
 }
+.bread-crumb ul li:nth-child(2) a:after {
+  content: "->";
+  position: relative;
+  padding-left: 15px;
+}
 .bread-crumb ul li:last-child a {
   color: #00a0dd;
   border-bottom: 3px solid #00a0dd;

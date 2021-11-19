@@ -260,6 +260,12 @@
           position: relative;
           padding-left: 15px;
         }
+
+        &:nth-child(2) a:after {
+          content: "->";
+          position: relative;
+          padding-left: 15px;
+        }
   
         &:last-child a {
           color: #00a0dd;
