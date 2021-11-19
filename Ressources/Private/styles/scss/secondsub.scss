@@ -373,6 +373,7 @@ p {
 
         &:hover {
           border-bottom: 2px solid #00a0dd;
+          margin-left: 5px;
         }
       }
     }
@@ -394,8 +395,7 @@ p {
 
     &:hover {
       background-color: #1cb9f7;
-      text-decoration: underline;
-      transform: scale(1.03);
+      transform: translateX(10px);
     }
   }
 
@@ -426,6 +426,7 @@ p {
 
         &:hover {
           text-decoration: underline;
+          margin-left: 5px;
         }
       }
     }

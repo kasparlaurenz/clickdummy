@@ -338,6 +338,7 @@ p:hover {
 }
 .content-wrapper .content-element-2 .teaser a:hover {
   text-decoration: underline;
+  margin-left: 5px;
 }
 .content-wrapper .content-element-2 .teaser-content {
   display: flex;

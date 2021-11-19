@@ -339,6 +339,7 @@ p:hover {
 }
 .content-wrapper .teaser .teaser-content a:hover {
   border-bottom: 2px solid #00a0dd;
+  margin-left: 5px;
 }
 .content-wrapper .cta {
   background-color: #00a0dd;
@@ -356,8 +357,7 @@ p:hover {
 }
 .content-wrapper .cta:hover {
   background-color: #1cb9f7;
-  text-decoration: underline;
-  transform: scale(1.03);
+  transform: translateX(10px);
 }
 .content-wrapper .content-element-2 {
   padding-top: 40px;
@@ -386,6 +386,7 @@ p:hover {
 }
 .content-wrapper .content-element-2 .teaser a:hover {
   text-decoration: underline;
+  margin-left: 5px;
 }
 .content-wrapper .content-element-2 .teaser-content {
   display: flex;

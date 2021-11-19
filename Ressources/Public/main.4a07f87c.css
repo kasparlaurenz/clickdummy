@@ -325,8 +325,8 @@ p:hover {
   position: relative;
   top: 20px;
   display: block;
-  width: 50px;
-  height: 2px;
+  width: 45px;
+  height: 3px;
   background-color: #00a0dd;
 }
 .content-wrapper main .article-container .article-slider .article-slide .article-content p {
@@ -351,6 +351,7 @@ p:hover {
 }
 .content-wrapper main .article-container .article-slider .article-slide .article-content a:hover {
   border-bottom: 2px solid #00a0dd;
+  margin-left: 5px;
 }
 .content-wrapper main .article-container .article-button {
   background-color: #00a0dd;
@@ -361,7 +362,7 @@ p:hover {
   transition: all 0.3s ease;
 }
 .content-wrapper main .article-container .article-button:hover {
-  transform: scale(1.05);
+  transform: translateX(10px);
   background-color: #3ac1f7;
 }
 .content-wrapper main .services-container {
@@ -421,18 +422,7 @@ p:hover {
 }
 .content-wrapper main .services-container .services-slider .services-slide .services-content a:hover {
   border-bottom: 2px solid #00a0dd;
-}
-.content-wrapper main .services-container .services-button {
-  background-color: #00a0dd;
-  width: fit-content;
-  padding: 20px 40px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.content-wrapper main .services-container .services-button:hover {
-  transform: scale(1.05);
-  background-color: #3ac1f7;
+  margin-left: 5px;
 }
 .content-wrapper main .content-element-1 {
   color: black;
@@ -480,6 +470,7 @@ p:hover {
 }
 .content-wrapper main .content-element-1 .content-text a:hover {
   border-bottom: 2px solid #00a0dd;
+  margin-left: 5px;
 }
 
 .footer-container {
