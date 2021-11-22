@@ -351,6 +351,10 @@ p {
                 background-color: #00a0dd;
               }
             }
+
+            h2 {
+              font-size: 20px;
+            }
             p {
               font-size: 16px;
               line-height: 20px;
@@ -419,14 +423,17 @@ p {
           }
           .active-gif {
             opacity: 0;
-            &:hover {
-              opacity: 1;
+            transition: all 0.2s ease-in-out ;
+            &:hover  {
+              opacity: 1; 
             }
           }
+
           .services-content {
             padding: 20px 30px 20px 40px;
             h2 {
               padding-top: 150px;
+              font-size: 20px;
             }
             p {
               font-size: 16px;

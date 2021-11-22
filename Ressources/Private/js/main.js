@@ -1,5 +1,3 @@
-
-
 $(".show-menu").on("click", () => {
   $(".menu").slideToggle({
     start: function () {
