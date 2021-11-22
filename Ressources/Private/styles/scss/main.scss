@@ -421,12 +421,15 @@ p {
             width: 380px;
             top: -60px;
           }
+
           .active-gif {
             opacity: 0;
-            transition: all 0.2s ease-in-out ;
-            &:hover  {
-              opacity: 1; 
-            }
+            transition: all 0.3s;
+          }
+
+          .static {
+            opacity: 1;
+            transition: all 0.3s;
           }
 
           .services-content {

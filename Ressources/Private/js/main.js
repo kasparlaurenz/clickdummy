@@ -47,4 +47,19 @@ $('.services').on('click', () => {
     }
   })
   
+
+
+  //Hover effekt
+  $('.active-gif').hover(function() {
+    $( this ).css({opacity: "1"});
+    $( this ).css({transform: "scale(1.02)"});
+    $(this).prev('img').css({opacity: "0"});
+
+    
+  }, function() {
+    $( this ).css({opacity: "0"});
+    $(this).prev('img').css({opacity: "1"});
+  }
+);
+  
   
